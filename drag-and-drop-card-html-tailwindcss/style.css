@@ -1,0 +1,51 @@
+/* FONT FAMILY Poppins BY GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* FONT FAMILY Inter BY GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* ROOT */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Inter',sans-serif;
+}
+/* BODY  */
+body{
+animation: fadeIn 2.5s;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* BASE */
+*,::before,::after{
+box-sizing: border-box;
+}
+h4{
+font-family: 'Poppins',sans-serif;
+position: relative;
+animation: fadeinLeft 2.5s;
+}
+@keyframes fadeinLeft {
+0%{
+    left: -50%;
+}
+100%{
+    left: 0;
+}
+}
+
+
+/* while chosen item */
+.sortable-chosen{
+box-shadow: 8px 8px 32px #e1e1e1;
+}
+/* while dragging item */
+.sortable-drag{
+opacity: 0;
+}
